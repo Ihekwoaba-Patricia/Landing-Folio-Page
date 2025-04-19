@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap Bundle JS (includes Popper.js) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script
+      src="https://kit.fontawesome.com/f567a8bfa0.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .roundColor:hover {
+        margin-left: 1rem;
+        display: flex;
+        gap: 0.5rem;
+      }
+
+      .extensive {
+        background-color: rgb(252, 234, 213);
+      }
+
+      .extensive-icons li {
+        margin-left: 0.5rem;
+      }
+
+      li {
+        list-style-type: none;
+      }
+
+      .image {
+        background-color: rgb(228, 154, 228);
+      }
+
+      .footer-list li {
+        margin-top: 1rem;
+      }
+
+      .last-div:hover {
+        transform: scale(1.1);
+      }
+
+      .last-writeup {
+        background: linear-gradient(90deg, #ff6a00, skyblue, rgb(61, 153, 61));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .last-div-btn {
+        background-color: rgb(74, 73, 73);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top mb-2">
+        <div class="container ">
+          <a class="navbar-brand fw-bold fs-2" href="#"><i class="fa-brands fa-hive"></i> LandingFolio</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarnav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <div class="collapse navbar-collapse" id="navbarnav">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+    
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="inspirationDropdown" data-bs-toggle="dropdown">
+                  Inspiration
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="inspirationDropdown">
+                  <li><a class="dropdown-item" href="#">Landing Pages</a></li>
+                  <li><a class="dropdown-item" href="#">Portfolios</a></li>
+                </ul>
+              </li>
+    
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="componentsDropdown" data-bs-toggle="dropdown">
+                  Components
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="componentsDropdown">
+                  <li><a class="dropdown-item" href="#">Buttons</a></li>
+                  <li><a class="dropdown-item" href="#">Cards</a></li>
+                  <li><a class="dropdown-item" href="#">Modals</a></li>
+                </ul>
+              </li>
+    
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="templatesDropdown" data-bs-toggle="dropdown">
+                  Templates
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="templatesDropdown">
+                  <li><a class="dropdown-item" href="#">Business</a></li>
+                  <li><a class="dropdown-item" href="#">Personal</a></li>
+                </ul>
+              </li>
+    
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="learnDropdown" data-bs-toggle="dropdown">
+                  Learn
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="learnDropdown">
+                  <li><a class="dropdown-item" href="#">Tutorials</a></li>
+                  <li><a class="dropdown-item" href="#">Courses</a></li>
+                </ul>
+              </li>
+    
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="toolsDropdown" data-bs-toggle="dropdown">
+                  Tools
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="toolsDropdown">
+                  <li><a class="dropdown-item" href="#">Generators</a></li>
+                  <li><a class="dropdown-item" href="#">Widgets</a></li>
+                </ul>
+              </li>
+    
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="pricingDropdown" data-bs-toggle="dropdown">
+                  Pricing
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="pricingDropdown">
+                  <li><a class="dropdown-item" href="#">Free</a></li>
+                  <li><a class="dropdown-item" href="#">Pro</a></li>
+                </ul>
+              </li>
+    
+            </ul>
+
+        <!-- Navbar links (Left side content) -->
+        <div class="d-flex ms-auto">
+          <button class="btn btn-outline-success" type="button">Login</button>
+        </div>
+      </nav>
+    </header>
+
+    <article class="container mx-auto mt-5 pt-5" style="width: 60%">
+      <div>
+        <h2 class="fw-bold">Web3forms</h2>
+        <p>Create Contact forms without Server</p>
+      </div>
+
+      <div class="d-lg-flex gap-3">
+        <p>Technology</p>
+        <div class="d-flex my-2 roundColor">
+          <div
+            class="rounded-circle bg-primary"
+            style="width: 10px; height: 10px"
+          ></div>
+          <div
+            class="rounded-circle bg-danger"
+            style="width: 10px; height: 10px"
+          ></div>
+          <div
+            class="rounded-circle bg-info-subtle"
+            style="width: 10px; height: 10px"
+          ></div>
+          <div
+            class="rounded-circle bg-warning"
+            style="width: 10px; height: 10px"
+          ></div>
+          <div
+            class="rounded-circle bg-success"
+            style="width: 10px; height: 10px"
+          ></div>
+          <div
+            class="rounded-circle bg-dark"
+            style="width: 10px; height: 10px"
+          ></div>
+        </div>
+      </div>
+
+      <div class="d-flex flex-column flex-sm-row gap-2">
+        <!-- Dropdown Button -->
+        <div class="dropdown w-100 w-sm-50">
+          <button
+            type="button"
+            class="btn border w-100 dropdown-toggle"
+            id="dropdownMenuBtn"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Device: Desktop
+          </button>
+
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuBtn">
+            <li><a class="dropdown-item fw-bold" href="#">Desktop</a></li>
+            <li><a class="dropdown-item" href="#">Mobile</a></li>
+          </ul>
+        </div>
+
+        <!-- Visit Site Button -->
+        <button class="btn bg-black text-white w-100 w-sm-50">
+          Visit site
+        </button>
+      </div>
+
+      <div class="extensive mt-5 d-none d-lg-flex p-3 justify-content-between">
+        <div class="">
+          <p class="fw-bold">
+            Extensive component library for Tailwind, Webflow & Figma
+          </p>
+          <p>
+            Give every page a stunning. professional look - with hundred of
+            components to choose from.
+          </p>
+        </div>
+
+        <div class="">
+          <button class="btn bg-black text-white">Browse library</button>
+
+          <ul class="extensive-icons d-flex">
+            <li><i class="fa-brands fa-weebly"></i></li>
+            <li><i class="fa-brands fa-hotjar"></i></li>
+            <li><i class="fa-brands fa-figma"></i></li>
+            <li><i class="fa-brands fa-vuejs"></i></li>
+            <li><i class="fa-brands fa-react"></i></li>
+            <li><i class="fa-brands fa-html5"></i></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="image mt-5 py-2">
+        <img
+          class="container-fluid"
+          src="https://landingfoliocom.imgix.net/1608626211925-web3forms-landing-page-desktop.png?&q=75&auto=format&w=1500"
+          alt=""
+        />
+      </div>
+    </article>
+
+    <hr class="mt-5" />
+
+    <footer>
+      <section class="container-fluid mt-5">
+        <div class="row p-5">
+          <div class="col-12 col-lg-8">
+            <h5 class="w-75">
+              Landingfolio features the best Landing Page designs on the web.
+              Get inspiration from real Landing Page examples, curated us to
+              ensure the higest quality
+            </h5>
+            <p class="mt-5 fs-4"><i class="fa-brands fa-twitter"></i></p>
+          </div>
+
+          <div class="col">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+              <ul class="footer-list col">
+                <h6>LINKS</h6>
+                <li>Inspiration</li>
+                <li>Component Library</li>
+                <li>Templates</li>
+                <li>Learn</li>
+                <li>Tools</li>
+                <li>Pricing</li>
+                <li>Submit a design</li>
+              </ul>
+
+              <ul class="footer-list col">
+                <h6>LEGAL</h6>
+                <li>Cookie Policy</li>
+                <li>Licensing Agreement</li>
+                <li>Partner Terms</li>
+                <li>Privacy Policy</li>
+                <li>Terms & Condition</li>
+              </ul>
+
+              <ul class="footer-list col">
+                <h6>PRODUCTS</h6>
+                <li>Free Logos</li>
+                <li>Mockup Generator</li>
+                <li>Figma Component Library</li>
+                <li>Webflow Cloneables</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="d-none d-lg-flex justify-content-lg-center text-white mb-2">
+        <div
+          class="last-div d-flex bg-black w-50 rounded px-5 py-3 position-fixed bottom-0"
+        >
+          <p class="last-writeup fw-bold">
+            Premium component for Tailwind workflow. Instantly Copied.
+          </p>
+          <button class="last-div-btn btn text-white ms-auto">
+            Browse collection
+          </button>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
